@@ -1,0 +1,14 @@
+{% extends 'imageApp/base.html' %}
+
+{% block content %}
+
+<h1>Welcome Team</h1>
+
+<p>Please LogIn to check my POC !</p>
+
+{% if user.is_authenticated %}
+    <a  href="{% url 'post_new' %}">Tire Information</a>
+
+{% endif %}
+
+{% endblock %}
